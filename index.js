@@ -80,6 +80,19 @@ function createTrustRegistryRouter() {
   //   environment: 'production', // optional
   //   created: '2026-01-08T00:00:00.000Z'
   // }
+  // Example circleci format:
+  // {
+  //   id: 'def456abc789012345678901234567890',
+  //   type: 'circleci',
+  //   claims: {
+  //     org_id: 'c9035eb6-6eb2-4c85-8a81-d9ee6a1fa8c2',
+  //     project_id: 'a1b2c3d4-e5f6-7890-abcd-ef1234567890',
+  //     pipeline_definition_id: '961ae4b1-070b-4134-ae64-1328a3ae3862',
+  //     vcs_origin: 'github.com/npm/trust-publish-test',
+  //     context_ids: ['58bef0c1-399d-49ca-a5ba-2f4317e4224d'] // optional, array of UUIDs
+  //   },
+  //   created: '2026-01-08T00:00:00.000Z'
+  // }
   let trustStore = {}
 
   // Load trust store from file on startup
@@ -446,6 +459,8 @@ if (require.main === module) {
     console.log(`  DELETE /debug/reset                    Reset all data`)
     console.log(`\nUsage:`)
     console.log(`  npm trust github mypackage --registry=http://localhost:3000 [options]`)
+    console.log(`  npm trust gitlab mypackage --registry=http://localhost:3000 [options]`)
+    console.log(`  npm trust circleci mypackage --registry=http://localhost:3000 --org-id <uuid> --project-id <uuid> --pipeline-definition-id <uuid> --vcs-origin <origin> [--context-id <uuid>...]`)
     console.log(`  npm trust list mypackage --registry=http://localhost:3000`)
     console.log(`  npm trust revoke mypackage --id=<id> --registry=http://localhost:3000`)
     console.log(`\n${'='.repeat(60)}\n`)

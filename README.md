@@ -167,6 +167,21 @@ curl -X POST http://localhost:3000/-/package/mypackage/trust \
 }
 ```
 
+### CircleCI Trust Configuration
+
+```json
+{
+  "type": "circleci",
+  "claims": {
+    "org_id": "c9035eb6-6eb2-4c85-8a81-d9ee6a1fa8c2",
+    "project_id": "ecc458d2-fbdc-4d9a-93c4-ac065ed3c3ca",
+    "pipeline_definition_id": "961ae4b1-070b-4134-ae64-1328a3ae3862",
+    "vcs_origin": "github.com/npm/cli",
+    "context_ids": ["58bef0c1-399d-49ca-a5ba-2f4317e4224d"]
+  }
+}
+```
+
 ## Data Storage
 
 Trust configurations are persisted to `trust-store.json` in the project directory. The file is automatically loaded on startup and saved after each modification.

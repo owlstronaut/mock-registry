@@ -173,11 +173,11 @@ curl -X POST http://localhost:3000/-/package/mypackage/trust \
 {
   "type": "circleci",
   "claims": {
-    "org_id": "c9035eb6-6eb2-4c85-8a81-d9ee6a1fa8c2",
-    "project_id": "ecc458d2-fbdc-4d9a-93c4-ac065ed3c3ca",
-    "pipeline_definition_id": "961ae4b1-070b-4134-ae64-1328a3ae3862",
-    "vcs_origin": "github.com/npm/cli",
-    "context_ids": ["58bef0c1-399d-49ca-a5ba-2f4317e4224d"]
+    "oidc.circleci.com/org-id": "c9035eb6-6eb2-4c85-8a81-d9ee6a1fa8c2",
+    "oidc.circleci.com/project-id": "ecc458d2-fbdc-4d9a-93c4-ac065ed3c3ca",
+    "oidc.circleci.com/pipeline-definition-id": "961ae4b1-070b-4134-ae64-1328a3ae3862",
+    "oidc.circleci.com/vcs-origin": "github.com/npm/cli",
+    "oidc.circleci.com/context-ids": ["58bef0c1-399d-49ca-a5ba-2f4317e4224d"]
   }
 }
 ```

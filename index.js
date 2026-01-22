@@ -85,11 +85,11 @@ function createTrustRegistryRouter() {
   //   id: 'def456abc789012345678901234567890',
   //   type: 'circleci',
   //   claims: {
-  //     org_id: 'c9035eb6-6eb2-4c85-8a81-d9ee6a1fa8c2',
-  //     project_id: 'a1b2c3d4-e5f6-7890-abcd-ef1234567890',
-  //     pipeline_definition_id: '961ae4b1-070b-4134-ae64-1328a3ae3862',
-  //     vcs_origin: 'github.com/npm/trust-publish-test',
-  //     context_ids: ['58bef0c1-399d-49ca-a5ba-2f4317e4224d'] // optional, array of UUIDs
+  //     'oidc.circleci.com/org-id': 'c9035eb6-6eb2-4c85-8a81-d9ee6a1fa8c2',
+  //     'oidc.circleci.com/project-id': 'a1b2c3d4-e5f6-7890-abcd-ef1234567890',
+  //     'oidc.circleci.com/pipeline-definition-id': '961ae4b1-070b-4134-ae64-1328a3ae3862',
+  //     'oidc.circleci.com/vcs-origin': 'github.com/npm/trust-publish-test',
+  //     'oidc.circleci.com/context-ids': ['58bef0c1-399d-49ca-a5ba-2f4317e4224d'] // optional, array of UUIDs
   //   },
   //   created: '2026-01-08T00:00:00.000Z'
   // }
